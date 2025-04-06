@@ -1,0 +1,77 @@
+/* 
+Homepage CSS
+*/
+
+header{
+    /*This is the selector used to target the area for the name of the website*/
+    text-align: center;
+    background-color: #6B0F1A;
+    color: white;
+}
+
+.start{
+    /*Selector used for the link which take the user to the tutorial section */
+    background-color: #808F85;
+    font-size: 25pt;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.topics{
+    /*Grid display used for the different UNIX topics*/
+    margin-top:120px;
+    margin-left: 50px;
+    margin-right: 50px ;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+    color: white;
+    
+}
+
+.card{
+    border-radius: 40px 40px 40px 40px ;
+    background-color: #6B0F1A;
+    text-align: center;
+    padding:10px;
+    font-size: 25pt;
+}
+
+/*Id's are used for the different background colors of the topics*/
+
+#one{
+    background-color: #595959;
+}
+
+#two{
+    background-color: #747C92;
+}
+
+#three{
+    background-color: #808F85;
+    
+}
+
+#four{
+    background-color: #31081F;
+
+}
+
+#five{
+    background-color: #595959;
+}
+
+#six{
+    background-color: #747C92;
+}
+
+#seven{
+    background-color: #808F85;
+}
+
+#eight{
+    background-color: #31081F;
+}
