@@ -1,3 +1,4 @@
+<!-- UPDATE LOL REGGIE AND I AGREED HAVING A TEMPLATE SIMPLY OVERCOMPLICATED THINGS SO IGNORE!! -->
 
 <!-- 
 Assuming this is a sort of template page, the variables that would need to be inserted include text for the <p>s 
