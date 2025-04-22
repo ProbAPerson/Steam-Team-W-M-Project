@@ -75,3 +75,14 @@ header{
 #eight{
     background-color: #31081F;
 }
+
+@media screen and (max-width:695px) {
+    /*Added media query so that the topics are mobile-friendly for smaller devices */
+    .topics{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: auto;
+    }
+    
+}
