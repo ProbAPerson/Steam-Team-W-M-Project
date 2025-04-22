@@ -12,21 +12,21 @@ $requestUri = $_SERVER['REQUEST_URI'];
         <span class="name">
             <?php echo $currentPageName; ?>
         </span>
-
+<!--Home Item-->
         <ul class="navLinks">
             <li class="nav-item">
             </li>
-
+<!--item 2-->
             <li class="nav-item">
                 <ul class="dropdown">
                 </ul>
             </li>
-
+<!--item 3-->
             <li class="nav-item">
                 <ul class="dropdown">
                 </ul>
             </li>
-
+<!--item 4-->
             <li class="nav-item">
             </li>
         </ul>
