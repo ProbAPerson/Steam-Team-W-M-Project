@@ -25,37 +25,20 @@
 
     <section class="topics">
         <section class="card" id="one">
-            <p>This is a topic</p>
+            <p>History Pt. I</p>
         </section>
 
         <section class="card" id="two">
-            <p>This is a topic</p>
+            <p>History Pt. II</p>
         </section>
 
         <section class="card" id="three">
-            <p>This is a topic</p>
+            <p>Why Care?</p>
         </section>
 
         <section class="card" id="four">
-            <p>This is a topic</p>
+            <p>Architechture</p>
         </section>
-
-        <section class="card" id="five">
-            <p>This is a topic</p>
-        </section>
-
-        <section class="card" id="six">
-            <p>This is a topic</p>
-        </section>
-
-        <section class="card" id="seven">
-            <p>This is a topic</p>
-        </section>
-
-        <section class="card" id="eight">
-            <p>This is a topic</p>
-        </section>
-
     </section>
     
     
