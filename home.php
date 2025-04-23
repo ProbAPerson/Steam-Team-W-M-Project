@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -12,10 +12,15 @@
     </header>
 
     <!--Space for the navigation include goes here -->
-    <!--I'm literally just testing something here, ignore this comment -->
+
+    <?php
+        include("inc/nav.php");
+    ?>
+
+
 
     <section class="start">
-        <a href="home.html">Start Your UNIX journey here!</a>
+        <a href="home.php">Start Your UNIX journey here!</a>
     </section>
 
     <section class="topics">
