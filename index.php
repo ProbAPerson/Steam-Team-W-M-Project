@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>NameNameName</h1>
+        <h1>Steam Team UNIX Survival Guide</h1>
     </header>
 
     <!--Space for the navigation include goes here -->
