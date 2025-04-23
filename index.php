@@ -20,7 +20,7 @@
 
 
     <section class="start">
-        <a href="home.php">Start Your UNIX journey here!</a>
+        <a href="index.php">Start Your UNIX journey here!</a>
     </section>
 
     <section class="topics">
