@@ -1,8 +1,8 @@
 <?php
 $path = "./";
 $page = "Quiz";
-include($path . "inc/header.php");
-include('../../../dbConn.php'); 
+include($path . "navbar.php");
+include('../../../dbCon.php'); 
 ?>
         <h2>Quiz</h2>
         <div class="questions"> 
@@ -19,7 +19,7 @@ include('../../../dbConn.php');
                     // fetches everything from questions bank, sorts into arrays, and randomly chooses ten of the items to put in the form
                     while ($row = $result->fetch_assoc()) {
                         $data[] = $row; 
-                    } // I know its so many arrays I'm sorry
+                    } // I know its so many arrays I'm sorry its more organized this way for answer-checking and selecting 
                     foreach ($data as $row) {
                         $questions[] = $row['question'];
                         $answerAs[] = $row['answerA'];
@@ -35,10 +35,14 @@ include('../../../dbConn.php');
                             $questionNum = rand(0, 19);
                         }
                         $selectedQuestions = [$questionNum];
-                        echo "<div class='questionBox'>" . 
-                        $questions[$questionNum] . "<fieldset id='question'>" . 
-                        $answerAs[$questionNum] . $answerBs[$questionNum] . $answerCs[$questionNum] . $answerDs[$questionNum] . 
-                        "</fieldset></div>";
+                        echo "<div class='questionBox'>
+                        <p>{$questions[$questionNum]}</p>
+                        <fieldset id='question'>";
+                        echo "<label><input type='radio' name='answer_$questionNum' value='1'> {$answerAs[$questionNum]}</label><br>";
+                        echo "<label><input type='radio' name='answer_$questionNum' value='2'> {$answerBs[$questionNum]}</label><br>";
+                        echo "<label><input type='radio' name='answer_$questionNum' value='3'> {$answerCs[$questionNum]}</label><br>";
+                        echo "<label><input type='radio' name='answer_$questionNum' value='4'> {$answerDs[$questionNum]}</label>";
+                        echo "</fieldset></div>";
                     }
                 ?>
                 <textarea name="name" id="name" placeholder="Jennie was here"></textarea>
