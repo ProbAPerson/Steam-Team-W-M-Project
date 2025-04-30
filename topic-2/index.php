@@ -1,6 +1,6 @@
 <?php
 $path = "../";
-$page = "Topic 1";
+$page = "Topic 2";
 include($path . "inc/header.php");
 ?>
 
