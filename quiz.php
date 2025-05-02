@@ -27,15 +27,15 @@ include('dbCon.php');
                         $answerBs[] = $row['answerB'];
                         $answerCs[] = $row['answerC'];
                         $answerDs[] = $row['answerD'];
-                        $answerKeys[] = $row['answerkey']; //Also, the answerkey is an int for index comparison purposes (e.g. 3 = C)
+                        $answerKeys[] = $row['answerKey']; //Also, the answerkey is an int for index comparison purposes (e.g. 3 = C)
                     }
                     $selectedQuestions = []; //checks if the randomly picked question num has already been picked
                     for ($x = 0; $x < 10; $x++) { //displays 10 out of 19 questions
-                        $questionNum = rand(0, 19);
+                        $questionNum = rand(0, 18);
                         while (in_array($questionNum, $selectedQuestions)){
-                            $questionNum = rand(0, 19);
+                            $questionNum = rand(0, 18);
                         }
-                        $selectedQuestions = [$questionNum];
+                        $selectedQuestions[] = $questionNum;
                         echo "<div class='questionBox'>
                         <p>{$questions[$questionNum]}</p>
                         <fieldset id='question'>";
