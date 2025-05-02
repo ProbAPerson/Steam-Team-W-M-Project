@@ -2,8 +2,9 @@
 $path = "./";
 $page = "Quiz";
 include($path . "navbar.php");
-include('../../../dbCon.php'); 
+include('dbCon.php'); 
 ?>
+    <body>
         <h2>Quiz</h2>
         <div class="questions"> 
             <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="quizform"> <!--Add onsubmit="return validateForm();" validateForm() function should also checkAnswers() if true-->
