@@ -1,7 +1,7 @@
 <?php
 $path = "../";
 $page = "Topic 3";
-include($path . "inc/header.php");
+include($path . "inc/navbar.php");
 ?>
 <div class="tutorial">
     <h1>File Permissions</h1>
