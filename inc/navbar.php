@@ -1,25 +1,26 @@
 <?php
 // dynamic page names
+//dynamic names
+$currentPage = basename($_SERVER['SCRIPT_NAME']);
 $requestUri = $_SERVER['REQUEST_URI'];
-$path = parse_url($requestUri, PHP_URL_PATH);
-$pathSegments = explode('/', trim($path, '/'));
-$currentPage = !empty($pathSegments[0]) ? $pathSegments[0] : 'home';
-$pageNames = [
-    'home' => 'Home',
-    'topic-1' => 'Topic 1',
-    'topic-2' => 'Topic 2',
-    'topic-3' => 'Topic 3',
-    'topic-4' => 'Topic 4',
-    'topic-5' => 'Topic 5',
-    'choose-your-journey' => 'Choose Your Journey',
-    'linux' => 'Linux',
-    'macos' => 'MacOS',
-    'ssh' => 'SSH',
-    'wsl' => 'WSL',
-    'history' => 'History',
-    'apple-and-unix' => 'Apple & Unix',
-    'quiz' => 'Quiz'
-];
+    $pageNames = [
+        'index.php' => 'Home',
+        't1.php' => 'Topic 1',
+        't2.php' => 'Topic 2',
+        't3.php' => 'Topic 3',
+        't4.php' => 'Topic 4',
+        't5.php' => 'Topic 5',
+        'wc.php' => 'Why Care',
+        'quiz.php' => 'Quiz',
+        'hs.php' => 'History',
+        'au.php' => 'Apple & Unix',
+        'cyj.php' => 'Choose your Journey',
+        'ssh.php' => 'SSH',
+        'mos.php' => 'MacOS',
+        'lx.php' => 'Linux',
+        'wsl.php' => 'WSL'
+
+    ];
 $currentPageName = $pageNames[$currentPage] ?? 'Page';
 ?>
 <!DOCTYPE html>
@@ -66,6 +67,7 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
             <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/" class = "">History</a>
             <ul class="dropdown">
                 <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/apple-and-unix/" class = "">Apple and Unix</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/why-care/" class = "">Why Care?</a>
                 </ul>
             </li>
             <li class="nav-item">
