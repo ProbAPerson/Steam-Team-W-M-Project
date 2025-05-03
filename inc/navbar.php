@@ -22,6 +22,13 @@ $pageNames = [
 ];
 $currentPageName = $pageNames[$currentPage] ?? 'Page';
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../scripts.js"></script>
+</head>
 <nav class="navbar">
     <div class="navContainer">
         <span class="name">

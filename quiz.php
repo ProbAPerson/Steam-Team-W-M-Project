@@ -1,13 +1,13 @@
 <?php
 $path = "./";
 $page = "Quiz";
-include($path . "navbar.php");
+include($path . "inc/navbar.php");
 include('dbCon.php'); 
 ?>
     <body>
         <h2>Quiz</h2>
         <div class="questions"> 
-            <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="quizform" onsubmit="return validateForm();"> 
+            <form method="POST" id="quizform" onsubmit="return validateForm();"> <!--action="php echo $_SERVER['PHP_SELF'];" this erases score display though -->
                 <?php 
                     $result = $mysqli -> query('SELECT * FROM questions_bank'); 
                     $data = [];
@@ -49,7 +49,7 @@ include('dbCon.php');
                 <textarea name="name" id="quizname" placeholder="Jennie was here"></textarea>
                 <input type="submit" value="Check answers">
             </form>
-            <p id="score"></p> <!-- Use DHTML/ innerHTML here in order to update text with score OR show error message if not everything is filled out -->
+            <p id="score"></p> <!-- DHTML/ innerHTML used here in order to update text with score OR show error message if not everything is filled out -->
         </div>
         <div id="leaderboard">
             <h2>Leaderboard</h2>
