@@ -72,5 +72,4 @@ include('dbCon.php');
 </html>
 <?php
     $mysqli->close();
-    //add footer
 ?>
