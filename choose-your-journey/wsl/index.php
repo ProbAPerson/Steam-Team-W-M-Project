@@ -1,7 +1,7 @@
 <?php
-$path = ".../";
+$path = "../../";
 $page = "Getting Started - WSL";
-include($path . "inc/header.php");
+include($path . "inc/navbar.php");
 ?>
 <div class="tutorial">
     <h1>WSL</h1>

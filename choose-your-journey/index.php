@@ -1,7 +1,7 @@
 <?php
 $path = "../";
 $page = "Choose your Journey";
-include($path . "inc/header.php");
+include($path . "inc/navbar.php");
 ?>
 <div class="tutorial">
     <h1>Choose your UNIX journey</h1>
