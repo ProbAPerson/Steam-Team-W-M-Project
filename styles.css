@@ -76,6 +76,10 @@ header{
     background-color: #31081F;
 }
 
+#score{
+    display: none;
+}
+
 .navbar {
     position: sticky;
     top: 0;
