@@ -14,6 +14,7 @@ $requestUri = $_SERVER['REQUEST_URI'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $currentPageName ?></title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts.js"></script>
 </head>
 <nav class="navbar">
     <div class="navContainer">
