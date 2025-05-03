@@ -1,5 +1,4 @@
 <?php
-// dynamic page names
 //dynamic names
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 $requestUri = $_SERVER['REQUEST_URI'];
@@ -45,29 +44,29 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
             <li class="nav-item">
                 <a class = "">Topics</a>
                 <ul class="dropdown">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topic-1/" class = "">Topic 1</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topic-2/" class = "">Topic 2</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topic-3/" class = "">Topic 3</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topic-4/" class = "">Topic 4</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topic-5/" class = "">Topic 5</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t1.php" class = "">Topic 1</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t2.php" class = "">Topic 2</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t3.php" class = "">Topic 3</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t4.php" class = "">Topic 4</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t5.php" class = "">Topic 5</a>
                 </ul>
             </li>
 <!--item 3-->
             <li class="nav-item">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/" class = "">Choose your journey</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/cyj.php" class = "">Choose your journey</a>
                 <ul class="dropdown">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/linux/" class = "">Linux</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/macos/" class = "">MacOS</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/ssh/" class = "">SSH</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/wsl/" class = "">WSL</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/lx.php" class = "">Linux</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/macos.php" class = "">MacOS</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/ssh.php" class = "">SSH</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/wsl.php" class = "">WSL</a>
                 </ul>
             </li>
 <!--item 4-->
             <li class="nav-item">
-            <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/" class = "">History</a>
+            <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/hs.php" class = "">History</a>
             <ul class="dropdown">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/apple-and-unix/" class = "">Apple and Unix</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/why-care/" class = "">Why Care?</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/au.php" class = "">Apple and Unix</a>
+                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/why-care/wc.php" class = "">Why Care?</a>
                 </ul>
             </li>
             <li class="nav-item">
