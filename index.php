@@ -1,4 +1,6 @@
-<?php include($path . "inc/navbar.php"); ?>
+<?php 
+$path = "./";
+include($path . "inc/navbar.php"); ?>
 <body>
     <header>
         <h1>Steam Team UNIX Survival Guide</h1>

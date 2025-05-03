@@ -12,7 +12,7 @@ include($path . "inc/navbar.php");
             <li>chmod</li>
             <li>chown</li>
         </ul>
-        If you feel that you are sufficiently familiar with these commands, we’d suggest moving on to Topic 4.
+        If you feel that you are sufficiently familiar with these commands, we'd suggest moving on to Topic 4.
     </p>
     <p>
         Unix file permissions control who can read, write to, or execute a file.
@@ -24,7 +24,7 @@ include($path . "inc/navbar.php");
         </ol>
     </p>
     <p>
-        Let’s create a file for this demonstration.
+        Let's create a file for this demonstration.
         <p class="codeExample">touch example.txt</p>
         We can now view the permissions of that file using ls:
         <p class="codeExample">ls -l example.txt</p>
