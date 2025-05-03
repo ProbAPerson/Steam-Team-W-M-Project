@@ -20,7 +20,7 @@ include('dbCon.php');
                     // fetches everything from questions bank, sorts into arrays, and randomly chooses ten of the items to put in the form
                     while ($row = $result->fetch_assoc()) {
                         $data[] = $row; 
-                    } // I know its so many arrays I'm sorry its more organized this way for answer-checking and selecting 
+                    } // I know its so many arrays its more organized this way for answer-checking and selecting 
                     foreach ($data as $row) {
                         $questions[] = $row['question'];
                         $answerAs[] = $row['answerA'];
@@ -46,10 +46,29 @@ include('dbCon.php');
                         echo "</fieldset></div>";
                     }
                 ?>
-                <textarea name="name" id="name" placeholder="Jennie was here"></textarea>
+                <textarea name="name" id="quizname" placeholder="Jennie was here"></textarea>
                 <input type="submit" value="Check answers">
             </form>
             <p id="score"></p> <!-- Use DHTML/ innerHTML here in order to update text with score OR show error message if not everything is filled out -->
         </div>
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+            <?php
+                $leaderboard_result = $mysqli -> query('SELECT * FROM leaderboard ORDER BY score LIMIT 10');
+                if ($leaderboard_result) {
+                    echo "<table border='1'>";
+                    echo "<tr><th>Name</th><th>Score</th></tr>";
+                    while ($row = $leaderboard_result -> fetch_assoc()) {
+                        echo "<tr><td>{$row['name']}</td><td>{$row['score']}</td></tr>";
+                    }
+                    echo "</table>";
+                } else {
+                    echo "<p>No leaderboard data found.</p>";
+                }
+            ?>
+        </div>
     </body>
 </html>
+<?php
+    $mysqli->close();
+?>
