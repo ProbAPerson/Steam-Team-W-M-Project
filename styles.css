@@ -40,6 +40,33 @@ header{
     font-size: 25pt;
 }
 
+.tutorial{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr ;
+    column-gap: 10px;
+}
+
+.image{
+    grid-row: 1/2 ;
+    grid-column: 1/2 ;
+}
+
+.section-1{
+    grid-row: 1/2;
+    grid-column: 2/3 ;
+}
+
+.section-1 h1{
+    color: #6B0F1A;
+    text-align: center;
+}
+
+.section h2{
+    color: #31081F;
+    text-align: center;
+}
+
 /*Id's are used for the different background colors of the topics*/
 
 #one{
