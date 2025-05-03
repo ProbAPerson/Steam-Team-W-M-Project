@@ -1,7 +1,7 @@
 <?php
 $path = "../";
 $page = "UNIX - Why Care?";
-include($path . "inc/header.php");
+include($path . "inc/navbar.php");
 ?>
 <article>
     <h1>Why care about UNIX?</h1>
