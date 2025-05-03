@@ -28,8 +28,8 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
 <head> <!-- head -->
     <meta charset="UTF-8" />
     <title> <?php echo $currentPageName; ?></title>
-    <link rel="stylesheet" href="../styles.css">
-    <script src="../scripts.js"></script>
+    <link rel="stylesheet" href="<?php echo $path . "styles.css" ?>>
+    <script src="<?php echo $path . "scripts.js"?>></script>
 </head>
 <nav class="navbar">
     <div class="navContainer">
@@ -39,7 +39,7 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
 <!--Home Item-->
         <ul class="navLinks">
             <li class="nav-item">
-                <a href="https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/" class="active">Home</a>\
+                <a href="https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/" class="active">Home</a>
             </li>
 <!--item 2-->
             <li class="nav-item">

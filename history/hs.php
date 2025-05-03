@@ -1,7 +1,7 @@
 <?php
 $path = "../";
 $page = "History";
-include($path . "inc/header.php");
+include($path . "inc/navbar.php");
 ?>
 <article>
     <h1></h1>

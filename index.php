@@ -1,16 +1,10 @@
-<?php include($path . "navbar.php"); ?>
+<?php 
+$path = "./";
+include($path . "inc/navbar.php"); ?>
 <body>
     <header>
         <h1>Steam Team UNIX Survival Guide</h1>
     </header>
-
-    <!--Space for the navigation include goes here -->
-
-    <?php
-        include("inc/nav.php");
-    ?>
-
-
 
     <section class="start">
         <a href="index.php">Start Your UNIX journey here!</a>

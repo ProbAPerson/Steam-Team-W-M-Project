@@ -1,7 +1,7 @@
 <?php
-$path = ".../";
+$path = "../../";
 $page = "Getting Started - macOS";
-include($path . "inc/header.php");
+include($path . "inc/navbar.php");
 ?>
 <div class="tutorial">
     <h1>macOS Terminal</h1>
