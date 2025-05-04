@@ -106,11 +106,9 @@ if (isset($_POST['name'])) {
                 }
             ?>
         </div>
-    </body>
-</html>
-<?php
-    $mysqli->close();
-?>
 <?php
 include($path . "inc/footer.php");
+?>
+<?php
+    $mysqli->close();
 ?>
