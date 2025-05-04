@@ -1,5 +1,5 @@
 <?php
-$path = ".../";
+$path = "../";
 $page = "Apple & UNIX";
 include($path . "inc/navbar.php");
 ?>
