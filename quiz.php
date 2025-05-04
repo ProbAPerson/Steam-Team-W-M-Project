@@ -4,56 +4,62 @@ $page = "Quiz";
 include($path . "inc/navbar.php");
 include('dbCon.php'); 
 
+session_start();
+
 function sanitize($str){
     $trimmed_str = trim($str);
     $cleaned_str = htmlentities($trimmed_str);
     return $cleaned_str;
 }
-if (isset($_POST['name']) && isset($_POST['score'])) {
+$result = $mysqli -> query('SELECT * FROM questions_bank'); 
+$data = [];
+$questions = [];
+$answerAs = [];
+$answerBs = [];
+$answerCs = [];
+$answerDs = [];
+$answerKeys = []; //everything needs to be in the same index order for answer keys to work 
+// fetches everything from questions bank, sorts into arrays, and randomly chooses ten of the items to put in the form
+while ($row = $result->fetch_assoc()) {
+    $data[] = $row; 
+} // I know its so many arrays its more organized this way for answer-checking and selecting 
+foreach ($data as $row) {
+    $questions[] = $row['question'];
+    $answerAs[] = $row['answerA'];
+    $answerBs[] = $row['answerB'];
+    $answerCs[] = $row['answerC'];
+    $answerDs[] = $row['answerD'];
+    $answerKeys[] = $row['answerKey']; //Also, the answerkey is an int for index comparison purposes (e.g. 3 = C)
+}
+if (isset($_POST['name'])) {
     $name = sanitize($_POST['name']);
     $score = 0;
+    $answeredCount = 0;
     foreach ($answerKeys as $questionIndex => $correctAnswer) {
         if (isset($_POST["answer_$questionIndex"])) {
+            $answeredCount++;
             $userAnswer = intval($_POST["answer_$questionIndex"]);
             if ($userAnswer === intval($correctAnswer)) {
                 $score++;
             }
         }
     }
-    $entry = $mysqli -> prepare("INSERT INTO `leaderboard` (`name`, `score`) VALUES (?, ?)");
-    $entry -> bind_param("ss", $name, $score);
-    $entry -> execute();
-    $entry -> close();
-    header("Location: " . $_SERVER['PHP_SELF']);
-    exit();
+    if($answeredCount === 10){
+        $_SESSION['latest_score'] = $score;
+        $entry = $mysqli -> prepare("INSERT INTO `leaderboard` (`name`, `score`) VALUES (?, ?)");
+        $entry -> bind_param("si", $name, $score);
+        $entry -> execute();
+        $entry -> close();
+        header("Location: " . $_SERVER['PHP_SELF']);
+        exit();
+    }
 }
-
 ?>
     <body>
         <h2>Quiz</h2>
         <div class="questions"> 
             <form method="POST" id="quizform" onsubmit="return validateForm();"> <!--action="php echo $_SERVER['PHP_SELF'];" this erases score display though -->
                 <?php 
-                    $result = $mysqli -> query('SELECT * FROM questions_bank'); 
-                    $data = [];
-                    $questions = [];
-                    $answerAs = [];
-                    $answerBs = [];
-                    $answerCs = [];
-                    $answerDs = [];
-                    $answerKeys = []; //everything needs to be in the same index order for answer keys to work 
-                    // fetches everything from questions bank, sorts into arrays, and randomly chooses ten of the items to put in the form
-                    while ($row = $result->fetch_assoc()) {
-                        $data[] = $row; 
-                    } // I know its so many arrays its more organized this way for answer-checking and selecting 
-                    foreach ($data as $row) {
-                        $questions[] = $row['question'];
-                        $answerAs[] = $row['answerA'];
-                        $answerBs[] = $row['answerB'];
-                        $answerCs[] = $row['answerC'];
-                        $answerDs[] = $row['answerD'];
-                        $answerKeys[] = $row['answerKey']; //Also, the answerkey is an int for index comparison purposes (e.g. 3 = C)
-                    }
                     $selectedQuestions = []; //checks if the randomly picked question num has already been picked
                     for ($x = 0; $x < 10; $x++) { //displays 10 out of 19 questions
                         $questionNum = rand(0, 18);
@@ -74,9 +80,15 @@ if (isset($_POST['name']) && isset($_POST['score'])) {
                 <textarea name="name" id="quizname" placeholder="Jennie was here"></textarea>
                 <input type="submit" value="Check answers">
             </form>
-
-            <p id="score"></p> <!-- DHTML/ innerHTML used here in order to update text with score OR show error message if not everything is filled out -->
         </div>
+        <?php
+            if (isset($_SESSION['latest_score'])) {
+                echo "<p id='score'>Your last score: {$_SESSION['latest_score']}</p>";
+                unset($_SESSION['latest_score']); 
+            }else{
+                echo "<p id='score'></p>";
+            }
+        ?> <!-- DHTML/ innerHTML used here in order to update text with score OR show error message if not everything is filled out -->
         <div id="leaderboard">
             <h2>Leaderboard</h2>
                 <!--Takes the first 10 highest scores from leaderboard db and displays in a table -->
