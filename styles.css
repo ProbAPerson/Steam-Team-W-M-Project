@@ -207,4 +207,15 @@ a:visited{
     }
     
 }
-
+body{
+    margin: 0;
+}
+.quiz{
+    margin: 1em;
+}
+.tutorial{
+    margin: 1em;
+}
+article{
+    margin:1em;
+}
