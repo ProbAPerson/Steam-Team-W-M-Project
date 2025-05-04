@@ -1,5 +1,5 @@
 <?php
-$path = "../../";
+$path = "../";
 $page = "Getting Started - WSL";
 include($path . "inc/navbar.php");
 ?>
@@ -30,7 +30,7 @@ include($path . "inc/navbar.php");
         </div>
     </p>
     <p>
-        Now, let's continue to the first topic: Basic file operations.
+        Now, let's continue to the first topic, <a href="../topics/t1.php">Basic file operations</a>.
     </p>
 </div>
 <?php
