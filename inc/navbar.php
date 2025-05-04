@@ -31,6 +31,7 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
     <!--link rel="stylesheet" href="styles.css">-->
     <script src="scripts.js"></script>
 </head>
+<button id="bttBTN" title="back to top">^</button>
 <nav class="navbar">
     <div class="navContainer">
         <span class="name">

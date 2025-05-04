@@ -21,3 +21,20 @@ function validateForm() {
         return true;
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    // btt button
+    const backToTopBtn = document.getElementById('bttBTN');
+    if (backToTopBtn) {
+        window.addEventListener('scroll', function() {
+            backToTopBtn.style.display = (window.pageYOffset > 300) ? 'block' : 'none';
+        });
+        // scroll to top
+        backToTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});

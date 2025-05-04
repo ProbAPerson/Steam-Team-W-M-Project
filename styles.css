@@ -177,6 +177,26 @@ a:visited{
     display: block; 
 }
 
+#bttBTN {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  #bttBTN {
+    background-color: #333;
+  }
+
 @media screen and (max-width:695px) {
     /*Added media query so that the topics are mobile-friendly for smaller devices */
     .topics{
@@ -187,3 +207,4 @@ a:visited{
     }
     
 }
+
