@@ -1,5 +1,5 @@
 <?php
-$path = "../../";
+$path = "../";
 $page = "Getting Started - Linux";
 include($path . "inc/navbar.php");
 ?>
@@ -49,6 +49,7 @@ include($path . "inc/navbar.php");
         As a new install, Arch only comes with the basics, requiring the user to install their window manager or desktop environment of their choice.
         Arch’s install guide can be found <a href="https://wiki.archlinux.org/title/Installation_guide" target="_blank">here</a>.
     </p>
+    <p>Now, lets continue to the <a href="../topics/t1.php">first topic.</a></p>
 </div>
 <?php
 include($path . "inc/footer.php");
