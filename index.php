@@ -7,25 +7,32 @@ include($path . "inc/navbar.php"); ?>
     </header>
 
     <section class="start">
-        <a href="index.php">Start Your UNIX journey here!</a>
+        <a href="choose-your-journey/cyj.php">Start Your UNIX journey here!</a>
     </section>
 
     <section class="topics">
-        <section class="card" id="one">
-            <p>History Pt. I</p>
+        <section>
+            <a href="history/au.php">
+                <div class="card" id="one">History Pt. I</div>
+            </a>
+        </section>
+        
+        <section>
+            <a href="history/hs.php">
+                <div class="card" id="two">History Pt. II</div>
+            </a>
         </section>
 
-        <section class="card" id="two">
-            <p>History Pt. II</p>
-        </section>
-
-        <section class="card" id="three">
-            <p>Why Care?</p>
+        <section>
+            <a href="why-care/wc.php">
+                <div class="card" id="three">Why Care?</div>
+            </a>
         </section>
 
         <section class="card" id="four">
             <p>Architechture</p>
         </section>
+
     </section>
 <?php
 include($path . "inc/footer.php");
