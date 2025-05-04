@@ -55,7 +55,8 @@ if (isset($_POST['name'])) {
     }
 }
 ?>
-    <body class="quiz">
+    <body>
+    <div class="quiz">
         <h2>Quiz</h2>
         <div class="questions"> 
             <form method="POST" id="quizform" onsubmit="return validateForm();"> <!--action="php echo $_SERVER['PHP_SELF'];" this erases score display though -->
@@ -81,6 +82,7 @@ if (isset($_POST['name'])) {
                 <input type="submit" value="Check answers">
             </form>
         </div>
+    </div>
         <?php
             if (isset($_SESSION['latest_score'])) {
                 echo "<p id='score'>Your last score: {$_SESSION['latest_score']}</p>";
