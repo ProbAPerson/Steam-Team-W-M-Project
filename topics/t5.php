@@ -23,7 +23,16 @@ include($path . "inc/navbar.php");
     <p>
         FileZilla is a file transfer tool that supports FTP, FTPS, and SFTP.
         While its functions can be accomplished through a command line interface, FileZilla’s GUI makes it easier for beginners to manage files on a Unix server. 
-        The download site for can be found <a href="https://filezilla-project.org/">here</a>. Note that when downloading to download the FileZilla Client.<br>
+        The download site for can be found <a href="https://filezilla-project.org/">here</a>.<br>
+        <div class="imageContainer">
+            <img src="../images/Filezilla.png" alt="Filezilla site">
+            <p>Screenshot of the <a href="https://filezilla-project.org/">Filezilla</a> site</p>
+        </div>
+        Note that when downloading to download the FileZilla Client.<br>
+        <div class="imageContainer">
+            <img src="../images/FilezillaUI.png" alt="Filezilla UI">
+            <p>Screenshot of <a href="https://filezilla-project.org/">Filezilla</a></p>
+        </div>
         When using FileZilla, you’ll need to know the host (and its protocol), your remote username, its password, and the port that it's on. The standard port is 22.
         Once connected to the remote server, you can use FileZilla almost like a standard File Manager.
         You can also change permissions of a file by right clicking it, and changing its properties.
