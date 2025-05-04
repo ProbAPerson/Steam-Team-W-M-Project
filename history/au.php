@@ -3,6 +3,7 @@ $path = "../";
 $page = "Apple & UNIX";
 include($path . "inc/navbar.php");
 ?>
+<body>
 <article>
     <h1>Apple’s History with Unix</h1>
     <p>
