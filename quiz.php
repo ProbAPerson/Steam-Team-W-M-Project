@@ -55,7 +55,7 @@ if (isset($_POST['name'])) {
     }
 }
 ?>
-    <body>
+    <body class="quiz">
         <h2>Quiz</h2>
         <div class="questions"> 
             <form method="POST" id="quizform" onsubmit="return validateForm();"> <!--action="php echo $_SERVER['PHP_SELF'];" this erases score display though -->
