@@ -1,5 +1,5 @@
 <?php
-$path = "../../";
+$path = "../";
 $page = "Getting Started - macOS";
 include($path . "inc/navbar.php");
 ?>
@@ -15,7 +15,7 @@ include($path . "inc/navbar.php");
         Or, type “Terminal.app” into Spotlight search.
     </p>
     <p>
-        Let’s continue to the first topic, Basic File operations.
+        Let’s continue to the first topic, <a href="../topics/t1.php">Basic File operations</a>.
     </p>
 </div> 
 <?php
