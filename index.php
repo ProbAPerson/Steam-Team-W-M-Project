@@ -27,7 +27,6 @@ include($path . "inc/navbar.php"); ?>
             <p>Architechture</p>
         </section>
     </section>
-    
-    
-</body>
-</html>
+<?php
+include($path . "inc/footer.php");
+?>
