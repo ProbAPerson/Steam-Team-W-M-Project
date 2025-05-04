@@ -45,6 +45,7 @@ header{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr ;
     column-gap: 10px;
+    margin:1em;
 }
 
 .image{
@@ -186,4 +187,11 @@ header{
         margin-right: auto;
     }
     
+}
+body{
+    margin: 0;
+}
+footer{
+    margin:2em;
+    text-align: center;
 }
