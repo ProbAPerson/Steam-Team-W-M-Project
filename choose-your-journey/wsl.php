@@ -20,8 +20,14 @@ include($path . "inc/navbar.php");
         To open WSL, simply run the command wsl in PowerShell or Command Prompt<br>
         If you wish to use a different distro in WSL, you can use:
         <p class="codeBlock">wsl –list –online</p>
+        <div class="imageContainer">
+            <img src="../images/wsl1.png" alt="Windows Command Prompt">
+        </div>
         That will give you a list of distros you can choose from. Then, run:
         <p class="codeBlock">wsl –install -d [distro name]</p>
+        <div class="imageContainer">
+            <img src="../images/wsl2.png" alt="Windows Command Prompt">
+        </div>
     </p>
     <p>
         Now, let's continue to the first topic: Basic file operations.
@@ -30,3 +36,4 @@ include($path . "inc/navbar.php");
 <?php
 include($path . "inc/footer.php");
 ?>
+
