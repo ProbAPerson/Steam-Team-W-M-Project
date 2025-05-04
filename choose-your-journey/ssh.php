@@ -1,5 +1,5 @@
 <?php
-$path = "../../";
+$path = "../";
 $page = "Getting Started - SSH";
 include($path . "inc/navbar.php");
 ?>
@@ -30,7 +30,7 @@ include($path . "inc/navbar.php");
         It’ll ask for your password. You’ll note that you won't receive feedback as you type, but the keys you press are still being entered.
     </p>
     <p>
-        Once connected, you can proceed to our first topic, Basic File Operations.
+        Once connected, you can proceed to our first topic, <a href="../topics/t1.php">Basic File Operations</a>.
     </p>
 </div>
 <?php
