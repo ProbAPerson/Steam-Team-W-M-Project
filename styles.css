@@ -9,6 +9,15 @@ header{
     color: white;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+
 .start{
     /*Selector used for the link which take the user to the tutorial section */
     background-color: #808F85;
@@ -20,7 +29,7 @@ header{
 
 .topics{
     /*Grid display used for the different UNIX topics*/
-    margin-top:120px;
+    margin-top:50px;
     margin-left: 50px;
     margin-right: 50px ;
     display: grid;
@@ -29,6 +38,7 @@ header{
     row-gap: 20px;
     column-gap: 20px;
     color: white;
+    justify-items: center;
     
 }
 
@@ -38,25 +48,14 @@ header{
     text-align: center;
     padding:10px;
     font-size: 25pt;
+    width: 400px;
+    height: 100px;
 }
 
-.tutorial{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr ;
-    column-gap: 10px;
-    margin:1em;
+.card a{
+    text-align: center;
 }
 
-.image{
-    grid-row: 1/2 ;
-    grid-column: 1/2 ;
-}
-
-.section-1{
-    grid-row: 1/2;
-    grid-column: 2/3 ;
-}
 
 .section-1 h1{
     color: #6B0F1A;
@@ -187,14 +186,4 @@ header{
         margin-right: auto;
     }
     
-}
-body{
-    margin: 0;
-}
-footer{
-    margin:2em;
-    text-align: center;
-}
-.quiz{
-    margin: 1em;
 }
