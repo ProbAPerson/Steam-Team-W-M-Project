@@ -3,6 +3,7 @@ $path = "../";
 $page = "History";
 include($path . "inc/navbar.php");
 ?>
+<body>
 <article>
     <h1>History of Unix</h1>
     <p>The first version of Unix was released in 1969, but originated in the late 1960s with Multics, a project born of a collaboration between MIT, Bell Labs, and General Electric.
