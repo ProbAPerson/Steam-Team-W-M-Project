@@ -3,6 +3,31 @@ $path = "./";
 $page = "Quiz";
 include($path . "inc/navbar.php");
 include('dbCon.php'); 
+
+function sanitize($str){
+    $trimmed_str = trim($str);
+    $cleaned_str = htmlentities($trimmed_str);
+    return $cleaned_str;
+}
+if (isset($_POST['name']) && isset($_POST['score'])) {
+    $name = sanitize($_POST['name']);
+    $score = 0;
+    foreach ($answerKeys as $questionIndex => $correctAnswer) {
+        if (isset($_POST["answer_$questionIndex"])) {
+            $userAnswer = intval($_POST["answer_$questionIndex"]);
+            if ($userAnswer === intval($correctAnswer)) {
+                $score++;
+            }
+        }
+    }
+    $entry = $mysqli -> prepare("INSERT INTO `leaderboard` (`name`, `score`) VALUES (?, ?)");
+    $entry -> bind_param("ss", $name, $score);
+    $entry -> execute();
+    $entry -> close();
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
+}
+
 ?>
     <body>
         <h2>Quiz</h2>
@@ -49,6 +74,7 @@ include('dbCon.php');
                 <textarea name="name" id="quizname" placeholder="Jennie was here"></textarea>
                 <input type="submit" value="Check answers">
             </form>
+
             <p id="score"></p> <!-- DHTML/ innerHTML used here in order to update text with score OR show error message if not everything is filled out -->
         </div>
         <div id="leaderboard">

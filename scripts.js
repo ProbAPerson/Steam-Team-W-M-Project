@@ -1,8 +1,16 @@
 
 function validateForm() {
     let name = document.getElementById("quizname").value;
-    if (name === ""){
-        var scoremsg = document.getElementById("score"); 
+    let radios = document.getElementById("quizform").querySelectorAll('input[type="radio"]');
+    var scoremsg = document.getElementById("score");
+    let questionsAnswered = [];
+    radios.forEach(radio => {
+        if (radio.checked) {
+            const questionId = radio.name;
+            questionsAnswered.push(questionId);
+        }
+    });
+    if (name === "" || questionsAnswered.length < 10){ 
         scoremsg.innerHTML = "Error: Please answer all questions.";
         scoremsg.style.color = "red";
         scoremsg.style.display = "block";
