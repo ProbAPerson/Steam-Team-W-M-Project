@@ -300,7 +300,6 @@ h1, h2, h3, h4, h5{
 }
 table {
     border: 2px solid black;
-    margin: 1em;
 }
 th, td {
     border: 1px solid black;
@@ -323,9 +322,6 @@ th, td {
     background-color: #d3bdbd;
     padding-bottom: 20px;
 }
-#leaderboard{
-    padding: 10px;
-}
 #leaderboard th, #leaderboard td {
     padding: 10px;
     text-align: center;
@@ -334,8 +330,11 @@ th, td {
     border-collapse: collapse;
     text-align: center; 
     font-size: 1.5em; 
+    margin-bottom: 20px;
 }
 #quizname, #checkanswers{
-    align-items: center; 
     display: flex;
+    align-self: center;
+    width: 50%;
+    margin: 10px auto;
 }
