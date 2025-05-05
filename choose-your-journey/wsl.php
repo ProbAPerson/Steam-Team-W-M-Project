@@ -13,9 +13,7 @@ include($path . "inc/navbar.php");
     <p>
         Open Powershell or Command Prompt in administrator mode.<br>
         Run this command:
-        <p class="codeExample">
-            wsl --install
-        </p>
+        <p class="codeExample">wsl --install</p>
         Restart your machine once this command finishes.<br>
         To open WSL, simply run the command wsl in PowerShell or Command Prompt<br>
         If you wish to use a different distro in WSL, you can use:
