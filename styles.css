@@ -235,6 +235,20 @@ body{
 article{
     margin:1em;
 }
+.codeExample{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    background-color:black;
+}
+.codeBlock{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    background-color:black;
+}
 
 /* For quiz page: */
 #questions, #leaderboard {
