@@ -63,7 +63,7 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
                 <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/cyj.php" class = "">Choose your journey</a>
                 <ul class="dropdown">
                     <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/lx.php" class = "">Linux</a></li>
-                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/macos.php" class = "">MacOS</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/mos.php" class = "">MacOS</a></li>
                     <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/ssh.php" class = "">SSH</a></li>
                     <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/wsl.php" class = "">WSL</a></li>
                 </ul>
