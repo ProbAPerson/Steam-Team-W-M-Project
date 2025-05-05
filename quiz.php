@@ -95,7 +95,7 @@ if (isset($_POST['name'])) {
             <h2>Leaderboard</h2>
                 <!--Takes the first 10 highest scores from leaderboard db and displays in a table -->
             <?php
-                $leaderboard_result = $mysqli -> query('SELECT * FROM leaderboard ORDER BY score LIMIT 10');
+                $leaderboard_result = $mysqli -> query('SELECT * FROM leaderboard ORDER BY score DESC LIMIT 10');
                 if ($leaderboard_result) {
                     echo "<table border='1'>";
                     echo "<tr><th>Name</th><th>Score</th></tr>";
