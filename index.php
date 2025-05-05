@@ -1,5 +1,6 @@
 <?php 
 $path = "./";
+$page = "Home";
 include($path . "inc/navbar.php"); ?>
 <body>
    
