@@ -107,6 +107,7 @@ a:visited{
     position: sticky;
     top: 0;
     width: 100%;
+    padding: 10px 20px;
     background-color: #808F85;
     z-index: 1000;
 }
@@ -130,10 +131,13 @@ a:visited{
 .navLinks {
     list-style: none;
     display: flex;
+    gap:30px;
+    margin: 0;
+    padding: 0;
 }
 
 .navLinks li {
-    margin-left: 20px;
+   
     position: relative;
 }
 
@@ -141,6 +145,8 @@ a:visited{
     color: black;
     text-decoration: none;
     font-size: 1.2rem;
+    padding: 10px 15px;
+    display:inline-block;
     transition: color 0.3s ease;
 }
 
@@ -161,12 +167,14 @@ a:visited{
 
 .dropdown li {
     padding: 10px;
+    display: block;
 }
 
 .dropdown li a {
     color: white;
     font-size: 1rem;
     text-decoration: none;
+    padding: 10px 20px;
 }
 
 .dropdown li a:hover {
@@ -226,6 +234,35 @@ body{
 }
 article{
     margin:1em;
+}
+.codeExample{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    background-color:black;
+    border-radius: 8px;
+    padding: 1em;
+    overflow-x: auto;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.codeBlock{
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color:white;
+    background-color:black;
+    border-radius: 8px;
+    padding: 1em;
+    padding: 1em;
+    overflow-x: auto;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* For quiz page: */
