@@ -360,8 +360,8 @@ th, td {
     max-width: 500px;
     width: 100%;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    transition: border-radius 0.4s;
-    transition: box-shadow 0.4s;
+    transition: border-radius 0.8s;
+    transition: box-shadow 0.8s;
     cursor: pointer;
 }
 .chooseOption img {
