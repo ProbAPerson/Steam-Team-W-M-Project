@@ -24,7 +24,7 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
 ?>
 <!DOCTYPE html>
 <html>
-<head> <!-- head -->
+<head> 
     <meta charset="UTF-8" />
     <title> <?php echo $currentPageName; ?></title>
     <link rel="stylesheet" href="<?= $path ?>styles.css">
