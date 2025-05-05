@@ -9,6 +9,9 @@ header{
     color: white;
 }
 
+a:link{
+    text-decoration: none;
+}
 
 a:visited{
     color: black;
