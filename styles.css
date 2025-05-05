@@ -314,3 +314,16 @@ article{
 #leaderboard{
     padding: 10px;
 }
+#leaderboard th, #leaderboard td {
+    padding: 10px;
+    text-align: center;
+}
+#leaderboard table {
+    border-collapse: collapse;
+    text-align: center; 
+    font-size: 1.5em; 
+}
+#quizname, #checkanswers{
+    align-items: center; 
+    display: flex;
+}

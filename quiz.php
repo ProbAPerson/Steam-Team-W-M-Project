@@ -79,7 +79,7 @@ if (isset($_POST['name'])) {
                     }
                 ?>
                 <textarea name="name" id="quizname" placeholder="Your name here!"></textarea>
-                <input type="submit" value="Check answers">
+                <input type="submit" id="checkanswers" value="Check answers">
             </form>
             <?php
                 if (isset($_SESSION['latest_score'])) {
