@@ -233,7 +233,15 @@ body{
     gap: 20px;
 }
 article{
-    margin:1em;
+    margin: 1em;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    gap: 20px;
 }
 .codeExample{
     font-family: "Space Mono", monospace;
@@ -263,6 +271,26 @@ article{
     white-space: pre-wrap;
     word-wrap: break-word;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.warn {
+    background-color: #ff4d4d;
+    color: black;                /* black text */  
+    border: 2px solid red;
+    padding: 1em;
+    margin: 1em 0;
+}
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin:0;
+    position: relative;
+}
+.imageContainer img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
 }
 
 /* For quiz page: */
