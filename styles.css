@@ -14,7 +14,7 @@ a{
 }
 
 a:visited{
-    color: white;
+    color: black;
 }
 
 
@@ -46,7 +46,7 @@ a:visited{
     border-radius: 40px 40px 40px 40px ;
     background-color: #6B0F1A;
     text-align: center;
-    padding:10px;
+    padding-top:55px;
     font-size: 25pt;
     width: 400px;
     height: 100px;
@@ -151,7 +151,7 @@ a:visited{
 }
 
 .navLinks a:hover {
-    color: #747C92;
+    color: #26304a;
 }
 
 .dropdown {
@@ -213,7 +213,6 @@ a:visited{
         flex-wrap: wrap;
         margin-right: auto;
     }
-    
 }
 body{
     margin: 0;
@@ -277,7 +276,7 @@ article{
 }
 .warn {
     background-color: #ff4d4d;
-    color: black;                /* black text */  
+    color: black;
     border: 2px solid red;
     padding: 1em;
     margin: 1em 0;
@@ -293,6 +292,18 @@ article{
     width: 100%;
     max-width: 300px;
     display: block;
+}
+h1, h2, h3, h4, h5{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+table {
+    border: 2px solid black;
+    margin: 1em;
+}
+th, td {
+    border: 1px solid black;
+    padding: 0.5em;
 }
 
 /* For quiz page: */
