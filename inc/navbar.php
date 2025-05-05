@@ -52,7 +52,7 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
                 <a class = "">Topics</a>
                     <ul class="dropdown">
                     <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t1.php" class = "">Topic 1</a></li>
-                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t2.php" class = "">Topic 1</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t2.php" class = "">Topic 2</a></li>
                     <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t3.php" class = "">Topic 3</a></li>
                     <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t4.php" class = "">Topic 4</a></li>
                     <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t5.php" class = "">Topic 5</a></li>
