@@ -233,7 +233,15 @@ body{
     gap: 20px;
 }
 article{
-    margin:1em;
+    margin: 1em;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    gap: 20px;
 }
 .codeExample{
     font-family: "Space Mono", monospace;
