@@ -30,6 +30,4 @@ include($path . "inc/navbar.php"); ?>
         </section>
 
     </section>
-<?php
-include($path . "inc/footer.php");
-?>
+
