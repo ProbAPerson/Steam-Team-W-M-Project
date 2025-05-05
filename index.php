@@ -2,10 +2,6 @@
 $path = "./";
 include($path . "inc/navbar.php"); ?>
 <body>
-    <header>
-        <h1>Steam Team UNIX Survival Guide</h1>
-    </header>
-
     <section class="start">
         <a href="choose-your-journey/cyj.php">Start Your UNIX journey here!</a>
     </section>

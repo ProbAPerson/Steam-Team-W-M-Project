@@ -31,6 +31,9 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
     <!--link rel="stylesheet" href="styles.css">-->
     <script src="../scripts.js"></script>
 </head>
+<header>
+        <h1>Steam Team UNIX Survival Guide</h1>
+</header>
 <button id="bttBTN" title="back to top">^</button>
 <nav class="navbar">
     <div class="navContainer">
