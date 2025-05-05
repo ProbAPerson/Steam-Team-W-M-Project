@@ -4,7 +4,7 @@ $currentPage = basename($_SERVER['SCRIPT_NAME']);
 $requestUri = $_SERVER['REQUEST_URI'];
     $pageNames = [
         t1.php' => 'File Operations',
-        't2.php' => 'Text Editors ',
+        't2.php' => 'Text Editors',
         't3.php' => 'File Permissions',
         't4.php' => 'Management',
         't5.php' => 'File Transfers',
@@ -51,11 +51,11 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
             <li class="nav-item">
                 <a class = "">Topics</a>
                     <ul class="dropdown">
-                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t1.php" class = "">Topic 1</a></li>
-                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t2.php" class = "">Topic 2</a></li>
-                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t3.php" class = "">Topic 3</a></li>
-                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t4.php" class = "">Topic 4</a></li>
-                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t5.php" class = "">Topic 5</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t1.php" class = "">File Operations</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t2.php" class = "">Text Editors</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t3.php" class = "">File Permissions</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t4.php" class = "">Management</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t5.php" class = "">File Transfers</a></li>
                 </ul>
             </li>
 <!--item 3-->
