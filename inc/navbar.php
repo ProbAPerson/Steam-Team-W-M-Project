@@ -52,30 +52,30 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
 <!--item 2-->
             <li class="nav-item">
                 <a class = "">Topics</a>
-                <ul class="dropdown">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t1.php" class = "">Topic 1</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t2.php" class = "">Topic 2</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t3.php" class = "">Topic 3</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t4.php" class = "">Topic 4</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t5.php" class = "">Topic 5</a>
+                    <ul class="dropdown">
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t1.php" class = "">Topic 1</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t2.php" class = "">Topic 1</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t3.php" class = "">Topic 3</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t4.php" class = "">Topic 4</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t5.php" class = "">Topic 5</a></li>
                 </ul>
             </li>
 <!--item 3-->
             <li class="nav-item">
                 <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/cyj.php" class = "">Choose your journey</a>
                 <ul class="dropdown">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/lx.php" class = "">Linux</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/macos.php" class = "">MacOS</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/ssh.php" class = "">SSH</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/wsl.php" class = "">WSL</a>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/lx.php" class = "">Linux</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/macos.php" class = "">MacOS</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/ssh.php" class = "">SSH</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/wsl.php" class = "">WSL</a></li>
                 </ul>
             </li>
 <!--item 4-->
             <li class="nav-item">
             <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/hs.php" class = "">History</a>
             <ul class="dropdown">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/au.php" class = "">Apple and Unix</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/why-care/wc.php" class = "">Why Care?</a>
+                <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/au.php" class = "">Apple and Unix</a></li>
+                <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/why-care/wc.php" class = "">Why Care?</a></li>
                 </ul>
             </li>
             <li class="nav-item">
