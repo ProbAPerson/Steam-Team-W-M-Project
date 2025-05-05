@@ -3,7 +3,7 @@
 $currentPage = basename($_SERVER['SCRIPT_NAME']);
 $requestUri = $_SERVER['REQUEST_URI'];
     $pageNames = [
-        t1.php' => 'File Operations',
+        't1.php' => 'File Operations',
         't2.php' => 'Text Editors',
         't3.php' => 'File Permissions',
         't4.php' => 'Management',
