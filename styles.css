@@ -109,7 +109,6 @@ a:visited{
     position: sticky;
     top: 0;
     width: 100%;
-    padding: 10px 20px;
     background-color: #808F85;
     z-index: 1000;
 }
