@@ -72,8 +72,8 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
             <li class="nav-item">
             <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/hs.php" class = "">History</a>
             <ul class="dropdown">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/au.php" class = "">Apple and Unix</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/why-care/wc.php" class = "">Why Care?</a>
+                <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/history/au.php" class = "">Apple and Unix</a></li>
+                <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/why-care/wc.php" class = "">Why Care?</a></li>
                 </ul>
             </li>
             <li class="nav-item">
