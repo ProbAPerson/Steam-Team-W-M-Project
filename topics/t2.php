@@ -5,11 +5,6 @@ include($path . "inc/navbar.php");
 ?>
 
 <div class="tutorial">
-    <section class="image">
-        
-
-    </section>
-        <section class="section-1">
             <h1>UNIX Text Editors</h1>
             <p>
                 Unix Text editors allow you to edit files directly within your terminal.
@@ -20,9 +15,6 @@ include($path . "inc/navbar.php");
                 Vim has a significantly steeper learning curve, but is an extremely powerful editor once mastered.
                 For this guide, we'll be focusing on Nano.
             </p>
-        </section>
-        
-        <section class="section">
         <h2>Nano</h2>
             <p>
                 To use nano, simply type
@@ -56,7 +48,6 @@ include($path . "inc/navbar.php");
             </p>
                 The contents will be printed directly to the terminal.
             </p>
-        </section>
 
 </div>
 
