@@ -28,7 +28,7 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
     <meta charset="UTF-8" />
     <title> <?php echo $currentPageName; ?></title>
     <link rel="stylesheet" href="<?= $path ?>styles.css">
-    <script src="<?php $path ?>scripts.js"></script>
+    <script src="<?= $path ?>scripts.js"></script>
     <!--Google moment-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
