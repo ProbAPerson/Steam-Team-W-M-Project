@@ -229,7 +229,7 @@ article{
 }
 
 /* For quiz page: */
-#questions, #leaderboard {
+.questions, #leaderboard {
     gap: 5%;
     align-items: center; 
     display: flex;
@@ -240,24 +240,10 @@ article{
 #quizform > *{
     margin-top: 2%;
 }
-#questions{
+.questions{
     background-color: #d3bdbd;
     padding-bottom: 20px;
 }
-@media screen and (min-width: 1350px) {
-    #questions, #leaderboard {
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 40px; 
-    }
-    #quizform, #leaderboard {
-        max-width: 600px;
-    }
-      #quizform {
-        flex: 2;
-    }
-      #leaderboard {
-        flex: 1;
-    }
+#leaderboard{
+    padding: 10px;
 }
