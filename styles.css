@@ -1,20 +1,17 @@
-/* 
-Homepage CSS
-*/
 
 header{
     /*This is the selector used to target the area for the name of the website*/
     text-align: center;
     background-color: #6B0F1A;
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-
 
 a:visited{
     color: black;
     text-decoration: underline;
 }
-
 
 .start{
     /*Selector used for the link which take the user to the tutorial section */
