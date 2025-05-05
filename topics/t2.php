@@ -39,6 +39,9 @@ include($path . "inc/navbar.php");
                 If you need to move the cursor, simply use your arrow keys. 
                 Try typing something simple.
             </p>
+            <div class="imageContainer">
+            <img src="../images/nano.png" alt="Nano">
+            </div>
             <p>
                 You’ll notice that nano gives you the important commands at the bottom.
                 To “save”, press ctrl+O. The file has now been written.
