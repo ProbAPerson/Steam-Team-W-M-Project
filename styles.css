@@ -264,6 +264,13 @@ article{
     word-wrap: break-word;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
+.warn {
+    background-color: #ff4d4d;
+    color: black;                /* black text */  
+    border: 2px solid red;
+    padding: 1em;
+    margin: 1em 0;
+}
 
 /* For quiz page: */
 #questions, #leaderboard {
