@@ -263,7 +263,7 @@ article{
     font-style: normal;
     color:#03a1fc;
     background-color:black;
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 1em;
     padding: 1em;
     overflow-x: auto;
@@ -356,8 +356,8 @@ th, td {
     max-width: 500px;
     width: 100%;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    transition: border-radius 0.8s;
-    transition: box-shadow 0.8s;
+    transition: border-radius 0.4s;
+    transition: box-shadow 0.4s;
     cursor: pointer;
 }
 .chooseOption img {
