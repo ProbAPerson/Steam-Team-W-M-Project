@@ -11,23 +11,27 @@ include($path . "inc/navbar.php");
         Alternatively, you may wish to skip to the first tutorial.
     </p>
     <div class="choose">
-        <a href="linux/">
+        <a href="lxx/">
             <div class="chooseOption">
+            <img src="../images/tux.png">
                 Linux
             </div>
         </a>
         <a href="ssh/">
             <div class="chooseOption">
+            <img src="../images/WindowsTerminal.png">
                 SSH
             </div>
         </a>
-        <a href="macos/">
+        <a href="mos/">
             <div class="chooseOption">
+            <img src="../images/macOSTerminal.png">
                 macOS Terminal
             </div>
         </a>
         <a href="wsl/">
             <div class="chooseOption">
+            <img src="../images/windows.png">
                 WSL
             </div>
         </a>
@@ -38,4 +42,3 @@ include($path . "inc/navbar.php");
         </a>
     </div>
 </div>
-

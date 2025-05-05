@@ -9,7 +9,7 @@ header{
     color: white;
 }
 
-a{
+a:link{
     text-decoration: none;
 }
 
@@ -264,7 +264,7 @@ article{
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    color:blue;
+    color:#03a1fc;
     background-color:black;
     border-radius: 12px;
     padding: 1em;
@@ -337,4 +337,32 @@ th, td {
     align-self: center;
     width: 50%;
     margin: 10px auto;
+}
+.choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+.chooseOption {
+    padding: 1em 2em;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.chooseOption img {
+    width: 5em;
+    height: 5em;
+    object-fit: contain;
+    margin-left: 1em;
 }

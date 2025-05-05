@@ -17,12 +17,14 @@ include($path . "inc/navbar.php");
             </p>
         <h2>Nano</h2>
             <p>
-                To use nano, simply type
+                To use nano, simply type</p>
                 <p class="codeExample">
                     Nano [filename]
                 </p>
+            <p>
                 Note that filename can either be a pre-existing file, or a file you wish to create. If you’re creating a new file, it’ll be created once you save for the first time. If you exit nano without saving, the file will not be created.
-                <p class="note">
+            </p>    
+            <p class="note">
                     Tip: While Nano is limited, Nano does have copy/paste functions.
                 </p>
             </p>
