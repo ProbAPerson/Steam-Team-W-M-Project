@@ -265,9 +265,9 @@ article{
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    color:white;
+    color:blue;
     background-color:black;
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 1em;
     padding: 1em;
     overflow-x: auto;
@@ -278,7 +278,7 @@ article{
 }
 .warn {
     background-color: #ff4d4d;
-    color: black;                /* black text */  
+    color: black;
     border: 2px solid red;
     padding: 1em;
     margin: 1em 0;
