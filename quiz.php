@@ -86,9 +86,9 @@ if (isset($_POST['name'])) {
                     echo "<p id='score'>Your last score: {$_SESSION['latest_score']}</p>";
                     unset($_SESSION['latest_score']); 
                 }else{
-                    echo "<p id='score'></p>";
+                    echo "<p id='score'></p>"; // DHTML/JS updates score
                 }
-            ?> <!-- DHTML/ innerHTML used here in order to update text with score OR show error message if not everything is filled out -->
+            ?> 
         </div>
     </div>
         <div id="leaderboard">

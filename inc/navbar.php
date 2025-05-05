@@ -28,7 +28,6 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
     <meta charset="UTF-8" />
     <title> <?php echo $currentPageName; ?></title>
     <link rel="stylesheet" href="<?= $path ?>styles.css">
-    <!--link rel="stylesheet" href="styles.css">-->
     <script src="<?php $path ?>scripts.js"></script>
 </head>
 <header>

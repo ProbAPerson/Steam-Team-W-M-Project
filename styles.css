@@ -228,7 +228,7 @@ article{
     margin:1em;
 }
 
-/* For quiz page */
+/* For quiz page: */
 #questions, #leaderboard {
     gap: 5%;
     align-items: center; 
