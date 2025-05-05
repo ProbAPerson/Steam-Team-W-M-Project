@@ -208,6 +208,10 @@ a:visited{
         flex-wrap: wrap;
         margin-right: auto;
     }
+    .chooseOption {
+    min-width: 250px;
+    max-width: 400px;
+}
 }
 body{
     margin: 0;

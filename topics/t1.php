@@ -5,11 +5,6 @@ include($path . "inc/navbar.php");
 ?>
 
 <div class="tutorial">
-    <section class="image">
-        
-
-    </section>
-        <section class="section-1">
             <h1>Basic File Operations</h1>
             <p>The Unix terminal may not be the most intuitive, but it’s a powerful tool.
                 Rather than a traditional GUI-driven file explorer, you’ll be learning how to use commands for file operations.
@@ -28,10 +23,6 @@ include($path . "inc/navbar.php");
             <p>Note that Unix is case sensitive.
                 Additionally, many commands may not give feedback if they succeed, and will only give feedback if they fail or require user intervention.
             </p>
-    
-        </section>
-    
-        <section class="section">
                 <h2>mkdir</h2>
                     <p>mkdir, or “make directory”, is the command used to make a directory in unix.
                         <p class="codeBlock">mkdir [name]</p>
@@ -40,11 +31,6 @@ include($path . "inc/navbar.php");
                         <p class="codeExample">mkdir myDirectory</p>
                         As you’ll see, you won’t receive feedback from the terminal if the directory was created successfully.
                     </p>
-    
-        </section>
-        
-    
-        <section class="section">
             <h2>ls:</h2>
             <p>ls can be used to list the contents of the current directory.
                 You can specify different command options.
@@ -79,10 +65,6 @@ include($path . "inc/navbar.php");
                 <p class="codeExample">ls</p>
                 You should see the “myDirectory” directory we just created. How do we enter it?
             </p>
-    
-        </section>
-        
-        <section class="section">
                     <h2>cd</h2>
                     <p>
                         cd allows you to change the directory you’re currently in.
@@ -94,23 +76,15 @@ include($path . "inc/navbar.php");
                         And let's go back in
                         <p class="codeExample">cd</p>
                     </p>
-    
-        </section>
-    
-        <section class="section">
                 <h2>touch</h2>
                     <p>
                         What if we want to make a file?
                         Say, for example, a .txt file?
                         The touch command allows us to do just that.
-                        <p class="codeBlock">touch [filename</p>
+                        <p class="codeBlock">touch [filename]</p>
                         Lets try it:
                         <p class="codeExample">touch example.txt</p>
                     </p>
-    
-        </section>
-        
-        <section class="section">
         <h2>rm</h2>
             <p>
                 What about deleting a file? rm lets you do exactly that.
@@ -126,18 +100,11 @@ include($path . "inc/navbar.php");
                 rm -r deleteMe
                 <p class="warn">Warning: Be very careful with rm -r. It will delete everything in a directory, with no way to undo.</p>
             </p>
-    
-        </section>
-        
-        <section class="section">
             <h2>tree</h2>
                 <p>
                     If you want an overview of your files, you can use the tree command
                     <p class="codeBlock">tree</p>
                     <p class="info">Note: This command is not built into macOS</p>
                 </p>
-    
-        </section>
 
 </div>
-

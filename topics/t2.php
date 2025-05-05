@@ -17,14 +17,12 @@ include($path . "inc/navbar.php");
             </p>
         <h2>Nano</h2>
             <p>
-                To use nano, simply type</p>
-                <p class="codeExample">
-                    Nano [filename]
-                </p>
+                To use nano, simply type
+            </p>
+                <p class="codeExample">Nano [filename]</p>
             <p>
                 Note that filename can either be a pre-existing file, or a file you wish to create. If you’re creating a new file, it’ll be created once you save for the first time. If you exit nano without saving, the file will not be created.
-            </p>    
-            <p class="note">
+                <p class="note">
                     Tip: While Nano is limited, Nano does have copy/paste functions.
                 </p>
             </p>
@@ -45,9 +43,9 @@ include($path . "inc/navbar.php");
         <h2>cat</h2>
             <p>
                 You can view the contents of the file in the terminal by using the cat command
-            <p class="codeExample">
-                cat [filename]
             </p>
+            <p class="codeExample">cat [filename]</p>
+            <p>
                 The contents will be printed directly to the terminal.
             </p>
 
