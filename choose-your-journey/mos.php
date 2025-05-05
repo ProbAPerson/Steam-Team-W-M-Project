@@ -18,6 +18,3 @@ include($path . "inc/navbar.php");
         Let’s continue to the first topic, <a href="../topics/t1.php">Basic File operations</a>.
     </p>
 </div> 
-<?php
-include($path . "inc/footer.php");
-?>

@@ -9,12 +9,10 @@ header{
     color: white;
 }
 
-a{
-    text-decoration: none;
-}
 
 a:visited{
-    color: white;
+    color: black;
+    text-decoration: underline;
 }
 
 
@@ -25,6 +23,7 @@ a:visited{
     text-align: center;
     color: white;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .topics{
@@ -46,10 +45,11 @@ a:visited{
     border-radius: 40px 40px 40px 40px ;
     background-color: #6B0F1A;
     text-align: center;
-    padding:10px;
+    padding-top:55px;
     font-size: 25pt;
     width: 400px;
     height: 100px;
+    font-weight: 800;
 }
 
 .card a{
@@ -83,7 +83,7 @@ a:visited{
 }
 
 #four{
-    background-color: #31081F;
+    background-color: #bf6e77;
 
 }
 
@@ -106,12 +106,10 @@ a:visited{
 .navbar {
     position: sticky;
     top: 0;
-    width: 100%;
-    padding: 10px 20px;
+    width: 100%; 
     background-color: #808F85;
     z-index: 1000;
 }
-
 .navContainer {
     max-width: 1200px;
     margin: 0 auto;
@@ -151,7 +149,7 @@ a:visited{
 }
 
 .navLinks a:hover {
-    color: #747C92;
+    color: #26304a;
 }
 
 .dropdown {
@@ -213,10 +211,12 @@ a:visited{
         flex-wrap: wrap;
         margin-right: auto;
     }
-    
 }
 body{
     margin: 0;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .quiz{
     margin: 1em;
@@ -233,7 +233,15 @@ body{
     gap: 20px;
 }
 article{
-    margin:1em;
+    margin: 1em;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    gap: 20px;
 }
 .codeExample{
     font-family: "Space Mono", monospace;
@@ -253,9 +261,9 @@ article{
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    color:white;
+    color:#03a1fc;
     background-color:black;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 1em;
     padding: 1em;
     overflow-x: auto;
@@ -264,9 +272,39 @@ article{
     word-wrap: break-word;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
+.warn {
+    background-color: #ff4d4d;
+    color: black;
+    border: 2px solid red;
+    padding: 1em;
+    margin: 1em 0;
+}
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 2em auto;
+}
+.imageContainer img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+}
+h1, h2, h3, h4, h5{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+table {
+    border: 2px solid black;
+}
+th, td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
 
 /* For quiz page: */
-#questions, #leaderboard {
+.questions, #leaderboard {
     gap: 5%;
     align-items: center; 
     display: flex;
@@ -277,24 +315,58 @@ article{
 #quizform > *{
     margin-top: 2%;
 }
-#questions{
-    background-color: #d3bdbd;
+.questions{
+    background-color: #ece2e2;
     padding-bottom: 20px;
 }
-@media screen and (min-width: 1350px) {
-    #questions, #leaderboard {
-      flex-direction: row;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 40px; 
-    }
-    #quizform, #leaderboard {
-        max-width: 600px;
-    }
-      #quizform {
-        flex: 2;
-    }
-      #leaderboard {
-        flex: 1;
-    }
+#leaderboard th, #leaderboard td {
+    padding: 10px;
+    text-align: center;
+}
+#leaderboard table {
+    border-collapse: collapse;
+    text-align: center; 
+    font-size: 1.5em; 
+    margin-bottom: 20px;
+}
+#quizname, #checkanswers{
+    display: flex;
+    align-self: center;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.choose {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+.chooseOption {
+    padding: 1em 2em;
+    border-radius: 12px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 300px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: border-radius 0.4s;
+    transition: box-shadow 0.4s;
+    cursor: pointer;
+}
+.chooseOption img {
+    width: 5em;
+    height: 5em;
+    object-fit: contain;
+    margin-left: 1em;
+}
+.chooseOption:hover {
+    border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }

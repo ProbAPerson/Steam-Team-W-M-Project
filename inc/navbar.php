@@ -27,9 +27,13 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
 <head> <!-- head -->
     <meta charset="UTF-8" />
     <title> <?php echo $currentPageName; ?></title>
-    <link rel="stylesheet" href="<?= $path ?>/styles.css">
-    <!--link rel="stylesheet" href="styles.css">-->
-    <script src="<?=$path?>/scripts.js"></script>
+    <link rel="stylesheet" href="<?= $path ?>styles.css">
+    <script src="<?php $path ?>scripts.js"></script>
+    <!--Google moment-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--End Google moment-->
 </head>
 <header>
         <h1>Steam Team UNIX Survival Guide</h1>
@@ -48,22 +52,22 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
 <!--item 2-->
             <li class="nav-item">
                 <a class = "">Topics</a>
-                <ul class="dropdown">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t1.php" class = "">Topic 1</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t2.php" class = "">Topic 2</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t3.php" class = "">Topic 3</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t4.php" class = "">Topic 4</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t5.php" class = "">Topic 5</a>
+                    <ul class="dropdown">
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t1.php" class = "">Topic 1</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t2.php" class = "">Topic 1</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t3.php" class = "">Topic 3</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t4.php" class = "">Topic 4</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/topics/t5.php" class = "">Topic 5</a></li>
                 </ul>
             </li>
 <!--item 3-->
             <li class="nav-item">
                 <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/cyj.php" class = "">Choose your journey</a>
                 <ul class="dropdown">
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/lx.php" class = "">Linux</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/macos.php" class = "">MacOS</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/ssh.php" class = "">SSH</a>
-                <a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/wsl.php" class = "">WSL</a>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/lx.php" class = "">Linux</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/macos.php" class = "">MacOS</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/ssh.php" class = "">SSH</a></li>
+                    <li><a href = "https://solace.ist.rit.edu/~iste240t21/Steam-Team-W-M-Project/choose-your-journey/wsl.php" class = "">WSL</a></li>
                 </ul>
             </li>
 <!--item 4-->

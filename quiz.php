@@ -79,7 +79,7 @@ if (isset($_POST['name'])) {
                     }
                 ?>
                 <textarea name="name" id="quizname" placeholder="Your name here!"></textarea>
-                <input type="submit" value="Check answers">
+                <input type="submit" id="checkanswers" value="Check answers">
             </form>
             <?php
                 if (isset($_SESSION['latest_score'])) {
@@ -95,7 +95,7 @@ if (isset($_POST['name'])) {
             <h2>Leaderboard</h2>
                 <!--Takes the first 10 highest scores from leaderboard db and displays in a table -->
             <?php
-                $leaderboard_result = $mysqli -> query('SELECT * FROM leaderboard ORDER BY score LIMIT 10');
+                $leaderboard_result = $mysqli -> query('SELECT * FROM leaderboard ORDER BY score DESC LIMIT 10');
                 if ($leaderboard_result) {
                     echo "<table border='1'>";
                     echo "<tr><th>Name</th><th>Score</th></tr>";

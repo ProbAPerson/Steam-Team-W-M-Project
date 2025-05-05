@@ -55,6 +55,4 @@ include($path . "inc/navbar.php");
         <p>Image from <a href="https://ia801504.us.archive.org/34/items/mac-oscheetah/10-0-Cheetah-About-This-Mac.png">Archive.org</a></p>
     </div>
 </article>
-<?php
-include($path . "inc/footer.php");
-?>
+

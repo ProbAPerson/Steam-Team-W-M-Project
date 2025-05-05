@@ -39,6 +39,4 @@ include($path . "inc/navbar.php");
         If you need a refresher on what file permission values do what, check out the File Permissions section of the guide.
     </p>
 </div> 
-<?php
-include($path . "inc/footer.php");
-?>
+

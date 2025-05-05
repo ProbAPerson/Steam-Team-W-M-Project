@@ -2,6 +2,8 @@
 $path = "./";
 include($path . "inc/navbar.php"); ?>
 <body>
+   
+
     <section class="start">
         <a href="choose-your-journey/cyj.php">Start Your UNIX journey here!</a>
     </section>
@@ -25,11 +27,10 @@ include($path . "inc/navbar.php"); ?>
             </a>
         </section>
 
-        <section class="card" id="four">
-            <p>Architechture</p>
+        <section>
+            <a href="quiz.php">
+                <div class="card" id="four">Quiz</div>
+            </a>
         </section>
 
     </section>
-<?php
-include($path . "inc/footer.php");
-?>
