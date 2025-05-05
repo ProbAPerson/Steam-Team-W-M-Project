@@ -57,12 +57,12 @@ a:visited{
 }
 
 
-.section-1 h1{
+.section h1{
     color: #6B0F1A;
     text-align: center;
 }
 
-.section h2{
+.section h2, .quiz h2{
     color: #31081F;
     text-align: center;
 }
@@ -219,3 +219,13 @@ body{
 article{
     margin:1em;
 }
+
+/* For quiz page */
+.quiz > * {
+    gap: 5%;
+    margin-top: 0;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+}
+
