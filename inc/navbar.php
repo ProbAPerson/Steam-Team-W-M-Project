@@ -29,7 +29,7 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
     <title> <?php echo $currentPageName; ?></title>
     <link rel="stylesheet" href="<?= $path ?>/styles.css">
     <!--link rel="stylesheet" href="styles.css">-->
-    <script src="scripts.js"></script>
+    <script src="../scripts.js"></script>
 </head>
 <button id="bttBTN" title="back to top">^</button>
 <nav class="navbar">
