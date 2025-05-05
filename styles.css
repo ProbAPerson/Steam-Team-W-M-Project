@@ -108,11 +108,10 @@ a:visited{
 .navbar {
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 100%; 
     background-color: #808F85;
     z-index: 1000;
 }
-
 .navContainer {
     max-width: 1200px;
     margin: 0 auto;
