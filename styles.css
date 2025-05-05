@@ -319,7 +319,7 @@ th, td {
     margin-top: 2%;
 }
 .questions{
-    background-color: #d3bdbd;
+    background-color: #ebcece;
     padding-bottom: 20px;
 }
 #leaderboard th, #leaderboard td {
@@ -338,6 +338,7 @@ th, td {
     width: 50%;
     margin: 10px auto;
 }
+
 .choose {
     display: flex;
     flex-direction: column;
