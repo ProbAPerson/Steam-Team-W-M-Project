@@ -57,8 +57,8 @@ if (isset($_POST['name'])) {
 ?>
     <body>
     <div class="quiz">
-        <h2>Quiz</h2>
         <div class="questions"> 
+            <h2>Quiz</h2>
             <form method="POST" id="quizform" onsubmit="return validateForm();"> <!--action="php echo $_SERVER['PHP_SELF'];" this erases score display though -->
                 <?php 
                     $selectedQuestions = []; //checks if the randomly picked question num has already been picked
@@ -78,19 +78,19 @@ if (isset($_POST['name'])) {
                         echo "</fieldset></div>";
                     }
                 ?>
-                <textarea name="name" id="quizname" placeholder="Jennie was here"></textarea>
+                <textarea name="name" id="quizname" placeholder="Your name here!"></textarea>
                 <input type="submit" value="Check answers">
             </form>
+            <?php
+                if (isset($_SESSION['latest_score'])) {
+                    echo "<p id='score'>Your last score: {$_SESSION['latest_score']}</p>";
+                    unset($_SESSION['latest_score']); 
+                }else{
+                    echo "<p id='score'></p>";
+                }
+            ?> <!-- DHTML/ innerHTML used here in order to update text with score OR show error message if not everything is filled out -->
         </div>
     </div>
-        <?php
-            if (isset($_SESSION['latest_score'])) {
-                echo "<p id='score'>Your last score: {$_SESSION['latest_score']}</p>";
-                unset($_SESSION['latest_score']); 
-            }else{
-                echo "<p id='score'></p>";
-            }
-        ?> <!-- DHTML/ innerHTML used here in order to update text with score OR show error message if not everything is filled out -->
         <div id="leaderboard">
             <h2>Leaderboard</h2>
                 <!--Takes the first 10 highest scores from leaderboard db and displays in a table -->

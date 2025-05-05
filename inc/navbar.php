@@ -27,9 +27,9 @@ $currentPageName = $pageNames[$currentPage] ?? 'Page';
 <head> <!-- head -->
     <meta charset="UTF-8" />
     <title> <?php echo $currentPageName; ?></title>
-    <link rel="stylesheet" href="<?= $path ?>/styles.css">
+    <link rel="stylesheet" href="<?= $path ?>styles.css">
     <!--link rel="stylesheet" href="styles.css">-->
-    <script src="../scripts.js"></script>
+    <script src="<?php $path ?>scripts.js"></script>
 </head>
 <header>
         <h1>Steam Team UNIX Survival Guide</h1>
