@@ -63,6 +63,4 @@ include($path . "inc/navbar.php");
         Since the 2000s, Unix and its variants have only continued to grow and expand, and now many Unix-like systems thrive and are widely supported on all sorts of machines. 
     </p>
 </article>
-<?php
-include($path . "inc/footer.php");
-?>
+

@@ -25,6 +25,4 @@ include($path . "inc/navbar.php");
         It is for employees, students, and hobbyists alike.
     </p>
 </article>
-<?php
-include($path . "inc/footer.php");
-?>
+

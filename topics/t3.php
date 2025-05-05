@@ -107,6 +107,3 @@ include($path . "inc/navbar.php");
           </p>
     </p>
 </div>
-<?php
-include($path . "inc/footer.php");
-?>

@@ -65,6 +65,3 @@ include($path . "inc/navbar.php");
         <p class="warn">Flatpak is not compatible with macOS.</p>
     </p>
 </div>
-<?php
-include($path . "inc/footer.php");
-?>

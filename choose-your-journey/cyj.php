@@ -38,6 +38,4 @@ include($path . "inc/navbar.php");
         </a>
     </div>
 </div>
-<?php
-include($path . "inc/footer.php");
-?>
+

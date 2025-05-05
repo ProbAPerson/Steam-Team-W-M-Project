@@ -140,6 +140,4 @@ include($path . "inc/navbar.php");
         </section>
 
 </div>
-<?php
-include($path . "inc/footer.php");
-?>
+

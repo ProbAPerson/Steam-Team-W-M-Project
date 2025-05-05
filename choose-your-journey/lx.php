@@ -51,6 +51,4 @@ include($path . "inc/navbar.php");
     </p>
     <p>Now, lets continue to the <a href="../topics/t1.php">first topic.</a></p>
 </div>
-<?php
-include($path . "inc/footer.php");
-?>
+

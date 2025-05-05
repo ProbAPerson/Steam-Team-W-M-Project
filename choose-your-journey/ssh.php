@@ -33,6 +33,4 @@ include($path . "inc/navbar.php");
         Once connected, you can proceed to our first topic, <a href="../topics/t1.php">Basic File Operations</a>.
     </p>
 </div>
-<?php
-include($path . "inc/footer.php");
-?>
+
